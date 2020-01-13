@@ -9,10 +9,14 @@ def join_ingredients(src)
   outerIndex = 0;
   foodArr = []
   while outerIndex < src.count do 
-    foodArr << "I love #{src[outerIndex][outerIndex]} and #{src[outerIndex][1]} on my pizza"
+    row = 1
+    while row < src[outerIndex].count do
+      foodArr << "I love #{src[outerIndex][0]} and #{src[outerIndex][row]} on my pizza"
+    row += 1
+    end
     outerIndex += 1
   end
-  # foodArr.join('')
+  foodArr.join('')
   foodArr
 end
 
