@@ -22,6 +22,7 @@ def find_greater_pair(src)
   while row < src.count do
     column = 0
     while column < src[row].count do
+      
       max = src[row].max
       max_arr << max
       column += 1
