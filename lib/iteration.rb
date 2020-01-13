@@ -20,13 +20,8 @@ def find_greater_pair(src)
   row = 0
   max_arr = []
   while row < src.count do
-    column = 0
-    while column < src[row].count do
-      
-      max = src[row].max
-      max_arr << max
-      column += 1
-    end
+    max = src[row].max
+    max_arr << max
     row += 1
   end
   max_arr
